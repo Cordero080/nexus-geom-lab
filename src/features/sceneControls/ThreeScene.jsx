@@ -31,11 +31,6 @@ import { useNebulaParticles } from './hooks/effects/useNebulaParticles';
 import { useAnimationLoop } from './hooks/interaction/useAnimationLoop';
 import { useObjectInteraction } from './hooks/interaction/useObjectInteraction';
 
-// AUDIO FEATURES
-import { useAudioAnalyzer } from '../audio/hooks/useAudioAnalyzer';
-import { useAudioReactive } from '../audio/hooks/useAudioReactive';
-import AudioToggle from '../audio/components/AudioToggle';
-
 // ThreeScene: 3D renderer that receives a config object from App.jsx
 function ThreeScene({ config, onScaleChange }) {
   // Destructure all configuration values from the single config object
@@ -88,17 +83,6 @@ function ThreeScene({ config, onScaleChange }) {
   useEffect(() => {
     orbSpeedRef.current = orbSpeed;
   }, [orbSpeed]);
-
-  // Audio reactivity
-  const { bass, mids, highs, overall, isActive, toggleAudio } = useAudioAnalyzer();
-  useAudioReactive(
-    objectsRef,
-    { bass, mids, highs, overall },
-    isActive,
-    baseColor,
-    hyperframeColor,
-    hyperframeLineColor
-  );
 
   /* ========================================================================
    * HOOK EXECUTION ORDER - Critical for Three.js scene setup
@@ -266,8 +250,6 @@ function ThreeScene({ config, onScaleChange }) {
           }}
         />
       )}
-      {/* Audio Reactive Toggle */}
-      <AudioToggle isActive={isActive} onToggle={toggleAudio} audioData={{ bass, mids, highs }} />
     </div>
   );
 }

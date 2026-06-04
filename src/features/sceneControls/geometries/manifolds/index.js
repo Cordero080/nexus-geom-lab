@@ -11,4 +11,3 @@ export {
   createCompoundQuantumManifold,
   metadata as compoundQuantumManifoldMetadata,
 } from './compoundQuantumManifold.js';
-export { createMobiusSphere, metadata as mobiusSphereMetadata } from './mobiusSphere.js';

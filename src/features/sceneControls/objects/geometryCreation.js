@@ -19,7 +19,6 @@ import { create16Cell } from '../geometries/polytopes/cell16.js';
 import { create600Cell } from '../geometries/polytopes/cell600.js';
 import { createCompoundPolychoron } from '../geometries/polytopes/compoundPolychoron.js';
 import { createCompound600Cell } from '../geometries/polytopes/compoundCell600.js';
-import { createMobiusSphere } from '../geometries/manifolds/mobiusSphere.js';
 import { createMegaTesseract } from '../geometries/polytopes/megaTesseract.js';
 import { createCompoundMegaTesseract } from '../geometries/polytopes/compoundMegaTesseract.js';
 import { createCompoundMegaTesseractNested } from '../geometries/polytopes/compoundMegaTesseract2.js';
@@ -97,10 +96,6 @@ export function createGeometry(type = 'icosahedron', options = {}) {
     case 'tetrahedron':
       // Use modular geometry - see geometries/polytopes/tetrahedron.js
       return createTetrahedron(options);
-
-    case 'mobiussphere':
-      // Use modular geometry - see geometries/manifolds/mobiusSphere.js
-      return createMobiusSphere(options);
 
     case '120cell':
       // Use modular geometry - see geometries/polytopes/cell120.js

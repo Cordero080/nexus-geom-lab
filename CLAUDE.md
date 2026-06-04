@@ -28,6 +28,13 @@ npm run reset # Reset dev user stats
 npm run users # List all users in DB
 ```
 
+### Deploying Backend Changes to Render
+The backend is a monorepo subfolder locally but Render watches a **separate** GitHub repo (`Cordero080/manifold-backend`). After pushing to the main repo, also run:
+```bash
+git subtree push --prefix=manifold-backend https://github.com/Cordero080/manifold-backend.git main
+```
+This syncs `manifold-backend/` into the separate repo so Render picks up the changes.
+
 ### Local Development
 The frontend Vite config proxies `/api` → `http://localhost:3000`, so run both servers simultaneously. No CORS issues locally.
 

@@ -182,7 +182,6 @@ function MaterialPropertiesSection({
               { value: 'sphere', label: '● Cpd-Sphere' },
               { value: 'compoundsphere', label: '◉ Super-Cpd-Sphere' },
               { value: 'hessianpolychoron', label: '✦ Hessian Polychoron' },
-              { value: 'mobiussphere', label: '⟲ Möbius Sphere' },
               { value: 'simplecpdhypercube', label: '◻ Cpd-Hypercube' },
               { value: 'cube', label: '■ 9Cpd-Hypercube' },
               { value: 'box', label: '▦ Cpd-Tesseract' },
