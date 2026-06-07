@@ -214,14 +214,16 @@
 /* Mobile Portrait (<= 480px) */
 @media (max-width: 480px) {
   .speed-control-container {
-    position: fixed;
-    bottom: 80px;
-    right: 10px;
-    left: 10px;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    left: auto;
     top: auto;
     transform: none;
     min-width: unset;
+    width: 100%;
     padding: 6px 8px;
+    margin-top: 10px;
   }
 
   /* Hide header label on mobile - value is sufficient */
@@ -263,13 +265,14 @@
 /* Tablet and larger mobile (481px - 768px) */
 @media (max-width: 768px) and (min-width: 481px) {
   .speed-control-container {
-    position: fixed;
-    bottom: 80px;
-    right: 10px;
+    position: relative;
+    bottom: auto;
+    right: auto;
     left: auto;
-    min-width: 200px;
-    transform: scale(0.8);
-    transform-origin: bottom right;
+    min-width: unset;
+    width: 100%;
+    transform: none;
+    margin-top: 10px;
   }
 
   .speed-control-label {
