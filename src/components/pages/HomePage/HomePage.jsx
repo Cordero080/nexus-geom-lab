@@ -227,6 +227,11 @@ MANIFOLD: A mathematical surface or multi-dimensional space that can be curved o
           <div className="scene-background bg-probability" aria-hidden="true"></div>
           <div className="scene-content">
             <div className="probability-waves"></div>
+            <p className="scene-description">
+              Sculpt four-dimensional geometry in real time.
+              <br />
+              Save your scenes. Unlock characters and animations.
+            </p>
           </div>
         </section>
 

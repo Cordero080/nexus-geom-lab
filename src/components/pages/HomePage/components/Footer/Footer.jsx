@@ -15,7 +15,7 @@ export default function Footer() {
       className={`${styles.footer} ${isScenesPage ? styles.scenesPage : ''} ${isShowcasePage ? styles.showcasePage : ''}`}
     >
       <img src="/assets/logo-one.svg" alt="Nexus Geom Lab Logo" className={styles.logo} />
-      <span className={styles.title}>NEXUS GEOM LAB</span>
+      <span className={styles.title}>MANIFOLD</span>
       <span className={styles.copyright}>© 2025 Pablo Cordero</span>
     </footer>
   );

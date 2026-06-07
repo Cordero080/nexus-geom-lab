@@ -1,6 +1,6 @@
 .footer {
   position: fixed;
-  bottom: 60px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
   display: inline-flex;
@@ -22,8 +22,8 @@
 }
 
 .logo {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   opacity: 0.9;
   filter: hue-rotate(0deg) saturate(1.5) brightness(1.2);
   animation: gradientShift 8s ease infinite;
@@ -48,7 +48,7 @@
 
 .title {
   font-family: 'Courier New', monospace;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   color: rgba(225, 231, 233, 0.656);
@@ -57,7 +57,7 @@
 
 .copyright {
   font-family: 'Courier New', monospace;
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -65,7 +65,7 @@
 @media (max-width: 768px) {
   .footer {
     position: fixed;
-    bottom: 40px;
+    bottom: calc(60px + 1vh);
     left: 0;
     right: 0;
     transform: none;
@@ -78,16 +78,16 @@
   }
 
   .logo {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
   }
 
   .title {
-    font-size: 12px;
+    font-size: 16px;
     margin-right: 8px;
   }
 
   .copyright {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
